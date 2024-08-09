@@ -5,18 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
-    <h1 class="text-3xl font-bold underline bg-raman bg-success">
-        Hello world!
-    </h1>
+    <header class="flex items-center justify-between py-[1.875rem] px-[3.375rem]">
+        <img src="assets/images/logo.svg" alt="">
+        <ul class="flex">
+            <li class="px-[2.34rem]">Home</li>
+            <li class="px-[2.34rem]">Shop</li>
+            <li class="px-[2.34rem]">About</li>
+            <li class="px-[2.34rem]">Contact</li>
+        </ul>
+        <div class="flex">
+            <div class="px-[1.40rem]"> <img src="assets/icons/user.svg" alt=""> </div>
+            <div class="px-[1.40rem]"> <img src="assets/icons/search.svg" alt=""> </div>
+            <div class="px-[1.40rem]"> <img src="assets/icons/heart.svg" alt=""> </div>
+            <div class="px-[1.40rem]"> <img src="assets/icons/cart.svg" alt=""> </div>
+        </div>
+    </header>
+
+    <section class="flex justify-end bg-hero-pattern">
+        <div class="px-11 py-16 bg-primary-100 max-w-[40%] mt-[9.56rem] mb-[6.5rem] mr-[3.625rem] rounded-[0.625rem]">
+
+            <p class="text-[1rem] text-content-color font-semibold">New Arrival</p>
+
+            <h1 class="text-[3.25rem] font-bold text-primary-900">Discover Our <br> New Collection</h1>
+            <p class="text-[1.125rem] mt-4 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+
+
+            <button class="mt-11 py-6 px-[4.5rem] bg-primary-900 text-white font-bold">BUY Now</button>
+
+        </div>
+    </section>
+
+
+
 </body>
 
 <script>
     tailwind.config = {
         theme: {
             extend: {
+                backgroundImage: {
+                    'hero-pattern': "url('/assets/images/bg.svg')",
+                },
                 colors: {
                     primary: {
                         50: '#FCF8F3',
@@ -26,7 +60,10 @@
 
                     success: "#2EC1AC",
                     danger: "#E97171",
-                    info: "#816DFA"
+                    info: "#816DFA",
+                    content: {
+                        color: "#333333"
+                    }
 
                 }
             }
