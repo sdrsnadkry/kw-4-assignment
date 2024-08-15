@@ -11,27 +11,27 @@
 </head>
 
 <body>
-    <header class="flex justify-between items-center py-[1.875rem] px-[3.375rem]">
+    <header class="flex flex-col lg:flex-row justify-between items-center py-[1.875rem] px-[3.375rem]">
         <img src="assets/images/logo.svg" alt="">
-        <ul class="flex">
-            <li class="px-[3.344rem]">Home</li>
-            <li class="px-[3.344rem]">Shop</li>
-            <li class="px-[3.344rem]">About</li>
-            <li class="px-[3.344rem]">Contact</li>
+        <ul class="flex flex-col lg:flex-row my-4 md:my-0 ">
+            <li class="px-[3.344rem] py-4 lg:py-0">Home</li>
+            <li class="px-[3.344rem] py-4 lg:py-0">Shop</li>
+            <li class="px-[3.344rem] py-4 lg:py-0">About</li>
+            <li class="px-[3.344rem] py-4 lg:py-0">Contact</li>
         </ul>
 
         <ul class="flex">
-            <li class="px-[1.40rem]"><img src="assets/icons/user.svg" alt=""> </li>
-            <li class="px-[1.40rem]"><img src="assets/icons/search.svg" alt=""> </li>
-            <li class="px-[1.40rem]"><img src="assets/icons/heart.svg" alt=""> </li>
-            <li class="px-[1.40rem]"><img src="assets/icons/cart.svg" alt=""> </li>
+            <li class="mx-[1.40rem] h-7 w-7"><img src="assets/icons/user.svg" alt=""> </li>
+            <li class="mx-[1.40rem] h-7 w-7"><img src="assets/icons/search.svg" alt=""> </li>
+            <li class="mx-[1.40rem] h-7 w-7"><img src="assets/icons/heart.svg" alt=""> </li>
+            <li class="mx-[1.40rem] h-7 w-7"><img src="assets/icons/cart.svg" alt=""> </li>
         </ul>
 
     </header>
 
-    <section class="grid grid-cols-2 bg-header-image">
+    <section class="grid grid-cols-1 md:grid-cols-2 bg-header-image">
         <div></div>
-        <div class="bg-primary-100 pt-[3.87543rem] pr-[2.687rem] pb-[2.312rem] pl-[2.437rem] rounded-[0.625rem] mt-[9.562rem] mr-[3.625rem] mb-[6.25rem] ">
+        <div class="bg-primary-100 pt-[3.87543rem] pr-[2.687rem] pb-[2.312rem] pl-[2.437rem] rounded-[0.625rem] mt-[9.562rem] md:mr-[3.625rem] mb-[6.25rem] ">
 
             <p class="text-[1rem] font-[600]">New Arrival</p>
 
@@ -45,7 +45,7 @@
     <section class="mt-14 container mx-auto">
         <h1 class="text-[2.5rem] font-[700] text-center mb-[2rem]">Our Products</h1>
 
-        <div class="grid grid-cols-4 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-8">
             <div class="relative group">
                 <img src="assets/images/bg.svg" class="h-[18.812rem] object-cover" alt="">
 
@@ -599,6 +599,19 @@
             <div class="bg-pink-400 h-52">
                 <div class="h-[60%] w-[50%] bg-slate-900"></div>
             </div>
+        </div>
+
+
+
+        <div class="my-32 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 ">
+            <div class="h-52 w-full bg-red-400"></div>
+            <div class="h-52 w-full bg-yellow-400"></div>
+            <div class="h-52 w-full bg-green-400"></div>
+            <div class="h-52 w-full bg-blue-400"></div>
+            <div class="h-52 w-full bg-red-400"></div>
+            <div class="h-52 w-full bg-yellow-400"></div>
+            <div class="h-52 w-full bg-green-400"></div>
+            <div class="h-52 w-full bg-blue-400"></div>
         </div>
 
     </section>
