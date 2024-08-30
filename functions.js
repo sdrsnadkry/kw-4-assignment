@@ -59,7 +59,7 @@ const resultAdd = calculator(2, 2);
 // const resSub = calculator(2, 2, "subtract");
 // const mul = calculator(2, 2, "mul");
 
-console.log(resultAdd)
+// console.log(resultAdd);
 
 //conditions
 //if else
@@ -69,3 +69,34 @@ console.log(resultAdd)
 // } else {
 //   console.log("false");
 // }
+
+//hoisting
+// something(2, 3);
+
+function something(a, b) {
+  console.log(a, b);
+}
+
+//anonymous function
+// function (a, b) {
+//  console.log(a, b)
+// }
+const doesSomething = function (a, b) {
+  console.log(a, b);
+};
+// doesSomething(1,2)
+
+// doesSomething2(5,6)
+//arrow function
+const doesSomething2 = (a, b) => {
+  console.log(a, b);
+};
+
+// doesSomething2(2,4)
+
+//let const var in hoisting
+
+console.log(num)
+
+var num = 3;
+
