@@ -5,35 +5,38 @@
 // }
 // .hello{}
 // #hellp{}
+const elements = document.getElementById("name");
 
-// const element = document.getElementsByClassName("name-class");
+elements.style.color = "blue";
 
-// element.style.color = "red";
+const element = document.getElementsByClassName("name-class");
 
-// console.log(element)
-// pratik.innerText = "Pratik Gaire is a CR";
+element.style.color = "red";
 
-// const greet = document.getElementById("greetings")
+console.log(element)
+pratik.innerText = "Pratik Gaire is a CR";
 
-// greet.innerText = "Hello, Pratik";
+const greet = document.getElementById("greetings")
 
-// console.log(element)
+greet.innerText = "Hello, Pratik";
 
-// const elementByClass = document.getElementsByClassName("name-class");
+console.log(element)
 
-// for (let index = 0; index <= elementByClass.length - 1; index++) {
-//   elementByClass[index].style.color = "red";
-// }
+const elementByClass = document.getElementsByClassName("name-class");
 
-// console.log(elementByClass)
+for (let index = 0; index <= elementByClass.length - 1; index++) {
+  elementByClass[index].style.color = "red";
+}
 
-// const elementByTag = document.getElementsByTagName("h2");
+console.log(elementByClass)
 
-// for (let index = 0; index <= elementByTag.length - 1; index++) {
-//   console.log((elementByTag[index].style.color = "blue"));
-// }
+const elementByTag = document.getElementsByTagName("h2");
 
-// console.log(elementByTag);
+for (let index = 0; index <= elementByTag.length - 1; index++) {
+  console.log((elementByTag[index].style.color = "blue"));
+}
+
+console.log(elementByTag);
 
 function changeColorToRed() {
   const element = document.getElementById("name");
