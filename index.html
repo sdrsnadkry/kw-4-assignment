@@ -3,6 +3,8 @@
 
 <head>
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
 <body>
@@ -15,8 +17,36 @@
 
     <button onmousedown="changeColorToBlue()" onmouseup="changeColorToRed()">Click to change color</button>
 
+    <div>
+        <label for="">Name</label>
+        <input type="text" class="border-2 border-slate-200" id="name-input">
+
+        <button class="bg-blue-200 px-10 py-2 rounded" onclick="submitValue()">Submit</button>
+    </div>
+
+    <div class="bg-[#00000050] absolute left-0 right-0 top-0 bottom-0 hidden" id="contact-popup">
+        <div class="bg-white max-w-[50%] mx-auto rounded-lg">
+
+            <div class="flex justify-end px-5">
+                <button class="text-red-300" onclick="closePopUP()">X</button>
+            </div>
+            <div>
+                <span>Name:</span>
+                <span id="name-value">Krishna</span>
+            </div>
+            <div>
+                <span>Message:</span>
+                <span>Hello</span>
+            </div>
+            <div>
+                <span>Email:</span>
+                <span>krishna@gmail.com</span>
+            </div>
+        </div>
+    </div>
 </body>
 
-<script src="./dom.js"></script>
+<!-- <script src="./dom.js"></script> -->
+<script src="form.js"></script>
 
 </html>

@@ -3,7 +3,7 @@
 
 // h2{
 // }
-// .hello{}
+// .hello{}al
 // #hellp{}
 const elements = document.getElementById("name");
 
@@ -50,4 +50,13 @@ function changeColorToBlue() {
   element.style.color = "blue";
 }
 
+const element = document.getElementById("name");
+
+element.innerText = "Pratik Gaire";
+
+
+const a = document.getElementById("name")
+
+a.innerText = "Pratik Gaire";
+a.style.color = "red";
 
